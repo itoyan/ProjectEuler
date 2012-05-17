@@ -8,12 +8,12 @@ public class prob012{
 			for( int j=1 ; j<=n/2 ; j++ ){
 				if( n % j == 0 ) nDivisors++;
 			}
-			nDivisors++;
-			if( nDivisors > 500 ) break;
+			// nDivisors++;
+			if( nDivisors >= 500 ) break;
 			i++;
 			if( i % 100 == 0 ) System.out.println(i + " " + nDivisors );
 		}
-		System.out.println(n + " " + i); // 76576500 12375
+		System.out.println(n + " " + i);
 	}
 }
 	
