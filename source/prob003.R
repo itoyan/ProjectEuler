@@ -7,5 +7,4 @@ for( i in num.sqrt ){
 	}
 	if( num == 1 ) break
 }
-print(ret) # 6857
-
+print(ret)

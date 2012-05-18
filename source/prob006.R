@@ -1,4 +1,2 @@
 num <- 1:100
-sum(num)^2-sum(num^2) # 25164150
-
-
+sum(num)^2-sum(num^2)

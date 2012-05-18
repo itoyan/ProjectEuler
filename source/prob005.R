@@ -1,7 +1,7 @@
 ret <- 2520
 num <- 11:20
 
-euclid <- function(m, n)                # 2^52 –¢–‚Ì 2 ‚Â‚Ì®”
+euclid <- function(m, n)
 {
  limit <- 2^52
  stopifnot(is.numeric(m) && is.numeric(n) && m == floor(m) && n == floor(n) && m < limit && n < limit)
@@ -20,4 +20,4 @@ for( n in num ){
   ret <- euclid(ret,n)$LCM
  }
 }
-print(ret) # 232792560
+print(ret)
