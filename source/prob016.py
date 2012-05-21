@@ -1,4 +1,3 @@
-
 num = 2**1000
 snum = str(num)
 total = 0
