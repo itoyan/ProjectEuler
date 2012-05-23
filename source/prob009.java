@@ -1,17 +1,21 @@
-public class prob009{
+public class prob008{
 	public static void main(String[] args){
-		int num = Integer.parseInt(args[0]);
-		long ret = 0;
-		for( int i=2 ; i<=num ; i++ ){
-			if( isPrime(i) ) ret += i;
+		int n = 1000;
+		int ret = 0;
+		int num = 0;
+		for( int a=1 ; a<=n/3 ; a++ ){
+			for( int b=a+1 ; b<=n/2 ; b++ ){
+				for( int c=b+1 ; c<=n ; c++ ){
+					if( a >= b || b >= c ) continue;
+					if( a*a + b*b == c*c && a+b+c==1000){
+						ret= a*b*c;
+						num++;
+					}
+				}
+			}
 		}
-		System.out.println(ret);
-	}
-	static boolean isPrime(int num){
-		int to = (int)Math.sqrt(num);
-		for( int i=2 ; i<=to ; i++ ){
-			if( num%i == 0 ) return false;
-		}
-		return true;
+		System.out.println(ret + " " + num);
 	}
 }
+
+
