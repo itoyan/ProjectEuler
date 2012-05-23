@@ -1,4 +1,4 @@
-public class prob008{
+public class prob009{
 	public static void main(String[] args){
 		int n = 1000;
 		int ret = 0;

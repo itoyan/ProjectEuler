@@ -1,4 +1,4 @@
-public class prob009{
+public class prob010{
 	public static void main(String[] args){
 		int num = Integer.parseInt(args[0]);
 		long ret = 0;
